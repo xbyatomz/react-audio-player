@@ -76,11 +76,11 @@ class Player extends React.Component {
         }, () => {
             this.refs.player.play()
         })
-      }
+    }
 
-      handleVolume(e) {
+    handleVolume(e) {
         this.refs.player.volume = e.target.value / 100
-      }
+    }
 
     render() {
         const {isPlaying} = this.state
